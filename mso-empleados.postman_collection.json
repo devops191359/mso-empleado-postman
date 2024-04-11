@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "5216fb2b-b920-4a3e-b53e-d0368c090f8d",
+		"name": "mso-empleados",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6989623"
+	},
+	"item": [
+		{
+			"name": "GET /empleados/busquedas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10410/msoempleado/v1/empleados/busquedas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10410",
+					"path": [
+						"msoempleado",
+						"v1",
+						"empleados",
+						"busquedas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /empleados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empleados\": [\r\n        {\r\n            \"primerNombre\": \"Eduardo\",\r\n            \"segundoNombre\": \"\",\r\n            \"apellidoPaterno\": \"Guillen\",\r\n            \"apellidoMaterno\": \"Maldonado\",\r\n            \"edad\": 30,\r\n            \"sexo\": \"M\",\r\n            \"fechaNacimiento\": \"02/04/1994\",\r\n            \"puesto\": \"Desarrollador Java\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:10410/msoempleado/v1/empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10410",
+					"path": [
+						"msoempleado",
+						"v1",
+						"empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /empleados",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"primerNombre\": \"Eduardos\",\r\n    \"segundoNombre\": \"\",\r\n    \"apellidoPaterno\": \"Guillen\",\r\n    \"apellidoMaterno\": \"Maldonado\",\r\n    \"edad\": 30,\r\n    \"sexo\": \"M\",\r\n    \"fechaNacimiento\": \"02/04/1994\",\r\n    \"puesto\": \"Desarrollador Java\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:10410/msoempleado/v1/empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10410",
+					"path": [
+						"msoempleado",
+						"v1",
+						"empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL /empleados/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:10410/msoempleado/v1/empleados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10410",
+					"path": [
+						"msoempleado",
+						"v1",
+						"empleados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
